@@ -6,6 +6,14 @@
   body {
     font-family: 'Montserrat', sans-serif;
   }
+
+  section {
+    padding: 60px 0;
+  }
+
+  section:not(:first-of-type):nth-of-type(odd) {
+    background-color: #fbfbfb;
+  }
 }
 
 @layer components {
@@ -38,9 +46,9 @@
       max-width: 1024px;
     }
   }
-  @media (min-width: 1536px) {
+  @media (min-width: 1300px) {
     .container {
-      max-width: 1536px;
+      max-width: 1300px;
     }
   }
 }
