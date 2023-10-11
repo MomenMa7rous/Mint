@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 // Styles
 import './index.css';
+import 'swiper/css/bundle';
 
 // Components
 import App from './App';

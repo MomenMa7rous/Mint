@@ -2,7 +2,23 @@
 @tailwind utilities;
 @tailwind components;
 
+.swiper-slide {
+  @apply my-auto pb-12 !important
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary !important
+}
+
 @layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary
+  }
+
+  img {
+    @apply select-none
+  }
+
   body {
     font-family: 'Montserrat', sans-serif;
   }
