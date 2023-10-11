@@ -26,8 +26,6 @@ const Clients = () => {
             ? 4
             : 4
           }
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
           autoplay
           pagination={{ clickable: true }}
           className="cursor-grab"
