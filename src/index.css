@@ -2,10 +2,6 @@
 @tailwind utilities;
 @tailwind components;
 
-.swiper-slide {
-  @apply my-auto pb-12 !important
-}
-
 .swiper-pagination-bullet-active {
   @apply bg-primary !important
 }

@@ -30,23 +30,24 @@ const Clients = () => {
           onSwiper={(swiper) => console.log(swiper)}
           autoplay
           pagination={{ clickable: true }}
+          className="cursor-grab"
         >
-          <SwiperSlide>
+          <SwiperSlide className='!my-auto !pb-12'>
             <img src={partner01} alt="Partner" className='mx-auto' />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className='!my-auto !pb-12'>
             <img src={partner02} alt="Partner" className='mx-auto' />
-          </SwiperSlide>
-          <SwiperSlide>
+          </SwiperSlide >
+          <SwiperSlide className='!my-auto !pb-12'>
             <img src={partner03} alt="Partner" className='mx-auto' />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className='!my-auto !pb-12'>
             <img src={partner04} alt="Partner" className='mx-auto' />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className='!my-auto !pb-12'>
             <img src={partner05} alt="Partner" className='mx-auto' />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className='!my-auto !pb-12'>
             <img src={partner06} alt="Partner" className='mx-auto' />
           </SwiperSlide>
         </Swiper>
