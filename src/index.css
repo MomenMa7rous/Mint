@@ -7,6 +7,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply text-primary
   }
@@ -57,5 +61,17 @@
     .container {
       max-width: 1200px;
     }
+  }
+  .link-button {
+    @apply block py-2 px-4 bg-secondary w-fit font-semibold text-sm sm:py-3 sm:px-5 relative transition
+  }
+  .link-button:hover::before {
+    @apply translate-x-2 translate-y-2
+  }
+  .link-button:hover {
+    @apply -translate-x-2 -translate-y-2
+  }
+  .link-button::before {
+    @apply content-[''] absolute top-0 left-0 w-full h-full border-2 border-secondary transition
   }
 }

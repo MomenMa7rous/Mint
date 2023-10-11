@@ -3,7 +3,7 @@ import SectionTitle from "../utils/SectionTitle"
 
 const About = () => {
   return (
-    <section>
+    <section id="about">
       <Container>
         <SectionTitle title="About Us.">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis adipisci consequuntur, consequatur quia reprehenderit ducimus.

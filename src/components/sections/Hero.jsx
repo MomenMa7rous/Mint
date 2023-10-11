@@ -15,7 +15,7 @@ const Hero = () => {
             <p className="leading-[2] mb-4 text-xs sm:text-sm sm:leading-[2]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, soluta. Sunt tempore quasi deleniti nisi totam impedit illo id fuga!
             </p>
-            <LinkButton href="#" className="m-auto lg:m-0">Send Message</LinkButton>
+            <LinkButton href="#contact" className="m-auto lg:m-0">Send Message</LinkButton>
           </div>
           <img src={hero} alt="Hero" className="flex-1" />
         </Container>

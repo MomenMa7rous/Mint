@@ -6,7 +6,7 @@ import LinkButton from "../utils/LinkButton"
 const Work = () => {
   const [cat, setCat] = useState("all")
   return (
-    <section>
+    <section id="work">
       <Container>
         <SectionTitle title="Work Showcase." />
         <main>
@@ -20,7 +20,7 @@ const Work = () => {
               {title: "Lemons", src: "https://ivkovic.me/themes/min/static/media/preview.2921cad9.png", cat: "illustrations"},
             ].filter(w => w.cat === cat || cat === 'all')}
           />
-          <LinkButton href='#' className="mx-auto">Have Work For Us?</LinkButton>
+          <LinkButton href='#contact' className="mx-auto">Have Work For Us?</LinkButton>
         </main>
       </Container>
     </section>

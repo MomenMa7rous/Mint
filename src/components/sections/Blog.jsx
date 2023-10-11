@@ -12,7 +12,7 @@ const Blog = () => {
   })
 
   return (
-    <section>
+    <section id="blog">
       <Container>
         <SectionTitle title="Our Blog.">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

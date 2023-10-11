@@ -6,7 +6,7 @@ import { faFacebookF, faTwitter, faLinkedinIn } from "@fortawesome/free-brands-s
 
 const Contact = () => {
   return (
-    <section>
+    <section id="contact">
       <Container>
         <SectionTitle title="Contact Us.">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -15,10 +15,10 @@ const Contact = () => {
           <div className="flex gap-10 items-center flex-col lg:flex-row mb-16">
             <form className="flex-1 flex flex-col gap-5 w-full">
               <h2 className="text-2xl font-extrabold mb-2 text-center lg:text-start">Send Us A Message.</h2>
-              <input type="text" placeholder="Name" className="block w-full p-2 outline-none bg-slate-50 border focus:border-primary" />
-              <input type="email" placeholder="Email" className="block w-full p-2 outline-none bg-slate-50 border focus:border-primary" />
-              <textarea placeholder="Message..." className="block w-full p-2 outline-none bg-slate-50 border focus:border-primary min-h-[200px]"></textarea>
-              <button type="submit" className="block py-2 px-4 bg-secondary w-fit font-semibold text-sm sm:py-3 sm:px-5 sm:text-base mx-auto lg:mx-0">Send Message</button>
+              <input type="text" placeholder="Name" className="block w-full p-2 outline-none bg-slate-50 border focus:border-primary transition" required />
+              <input type="email" placeholder="Email" className="block w-full p-2 outline-none bg-slate-50 border focus:border-primary transition" required />
+              <textarea placeholder="Message..." className="block w-full p-2 outline-none bg-slate-50 border focus:border-primary min-h-[200px] transition" required></textarea>
+              <button type="submit" className="link-button mx-auto lg:mx-0">Send Message</button>
             </form>
             <img src="https://ivkovic.me/themes/min/static/media/bg.b74b9f78.png" alt="Contact" className="flex-1 w-full" />
           </div>
