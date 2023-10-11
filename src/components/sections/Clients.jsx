@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules'
 import Container from '../utils/Container';
+import { useState } from 'react';
 
 // Partners Images
 import partner01 from '../../assets/partner01.svg'
@@ -11,6 +12,12 @@ import partner05 from '../../assets/partner05.svg'
 import partner06 from '../../assets/partner06.svg'
 
 const Clients = () => {
+  const [width, setWidth] = useState(+window.innerWidth)
+  
+  window.addEventListener("resize", () => {
+    setWidth(+window.innerWidth)
+  })
+
   return (
     <section>
       <Container>
@@ -18,11 +25,11 @@ const Clients = () => {
           modules={[Autoplay, Pagination]}
           spaceBetween={50}
           slidesPerView={
-            +window.innerWidth >= 0 && +window.innerWidth < 640
+            width >= 0 && width < 640
             ? 2
-            : +window.innerWidth >= 640 && +window.innerWidth < 768
+            : width >= 640 && width < 768
             ? 3
-            : +window.innerWidth >= 768
+            : width >= 768
             ? 4
             : 4
           }

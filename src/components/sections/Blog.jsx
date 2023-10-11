@@ -2,8 +2,15 @@ import Container from "../utils/Container"
 import SectionTitle from "../utils/SectionTitle"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, Pagination } from "swiper/modules"
+import { useState } from "react"
 
 const Blog = () => {
+  const [width, setWidth] = useState(+window.innerWidth)
+  
+  window.addEventListener("resize", () => {
+    setWidth(+window.innerWidth)
+  })
+
   return (
     <section>
       <Container>
@@ -15,11 +22,11 @@ const Blog = () => {
             modules={[Autoplay, Pagination]}
             spaceBetween={20}
             slidesPerView={
-              +window.innerWidth >= 0 && +window.innerWidth < 640
+              width >= 0 && width < 640
               ? 1
-              : +window.innerWidth >= 640 && +window.innerWidth < 1024
+              : width >= 640 && width < 1024
               ? 2
-              : +window.innerWidth >= 1024
+              : width >= 1024
               ? 3
               : 3
             }
@@ -28,7 +35,7 @@ const Blog = () => {
             className="cursor-grab"
           >
             <SwiperSlide className="mb-12">
-              <figure className="shadow-sm border-b">
+              <figure className="border">
                 <div className="relative">
                   <img src="https://ivkovic.me/themes/min/static/media/preview.90cb13f6.png" alt="Blog Post" className="w-full" />
                   <div className="absolute top-0 left-0 w-full h-full grid place-items-center bg-secondary-low opacity-0 transition hover:opacity-100">
@@ -45,7 +52,7 @@ const Blog = () => {
               </figure>
             </SwiperSlide>
             <SwiperSlide className="mb-12">
-              <figure className="shadow-sm border-b">
+              <figure className="border">
                 <div className="relative">
                   <img src="https://ivkovic.me/themes/min/static/media/preview.e0cb1b1c.png" alt="Blog Post" className="w-full" />
                   <div className="absolute top-0 left-0 w-full h-full grid place-items-center bg-secondary-low opacity-0 transition hover:opacity-100">
@@ -62,7 +69,7 @@ const Blog = () => {
               </figure>
             </SwiperSlide>
             <SwiperSlide className="mb-12">
-              <figure className="shadow-sm border-b">
+              <figure className="border">
                 <div className="relative">
                   <img src="https://ivkovic.me/themes/min/static/media/preview.844772d7.png" alt="Blog Post" className="w-full" />
                   <div className="absolute top-0 left-0 w-full h-full grid place-items-center bg-secondary-low opacity-0 transition hover:opacity-100">
@@ -79,7 +86,7 @@ const Blog = () => {
               </figure>
             </SwiperSlide>
             <SwiperSlide className="mb-12">
-              <figure className="shadow-sm border-b">
+              <figure className="border">
                 <div className="relative">
                   <img src="https://ivkovic.me/themes/min/static/media/preview.0c16d81f.png" alt="Blog Post" className="w-full" />
                   <div className="absolute top-0 left-0 w-full h-full grid place-items-center bg-secondary-low opacity-0 transition hover:opacity-100">
@@ -96,7 +103,7 @@ const Blog = () => {
               </figure>
             </SwiperSlide>
             <SwiperSlide className="mb-12">
-              <figure className="shadow-sm border-b">
+              <figure className="border">
                 <div className="relative">
                   <img src="https://ivkovic.me/themes/min/static/media/preview.6ebd08bf.png" alt="Blog Post" className="w-full" />
                   <div className="absolute top-0 left-0 w-full h-full grid place-items-center bg-secondary-low opacity-0 transition hover:opacity-100">
@@ -113,7 +120,7 @@ const Blog = () => {
               </figure>
             </SwiperSlide>
             <SwiperSlide className="mb-12">
-              <figure className="shadow-sm border-b">
+              <figure className="border">
                 <div className="relative">
                   <img src="https://ivkovic.me/themes/min/static/media/preview.2dccd3dc.png" alt="Blog Post" className="w-full" />
                   <div className="absolute top-0 left-0 w-full h-full grid place-items-center bg-secondary-low opacity-0 transition hover:opacity-100">
